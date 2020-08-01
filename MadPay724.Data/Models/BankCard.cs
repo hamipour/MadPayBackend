@@ -26,7 +26,7 @@ namespace MadPay724.Data.Models
         [StringLength(2, MinimumLength = 2)]
         public string ExpireYear { get; set; }
 
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
     }
 }

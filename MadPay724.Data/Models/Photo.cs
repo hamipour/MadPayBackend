@@ -21,7 +21,7 @@ namespace MadPay724.Data.Models
         public short IsMain { get; set; }
 
         [Required]
-        public User UserId { get; set; }
+        public string UserId { get; set; }
         public User User { get; set; }
     }
 }
