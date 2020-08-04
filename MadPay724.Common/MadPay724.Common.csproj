@@ -6,7 +6,11 @@
     <ApplicationIcon />
     <StartupObject />
   </PropertyGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\MadPay724.Data\MadPay724.Data.csproj"/>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MadPay724.Data\MadPay724.Data.csproj" />
   </ItemGroup>
 </Project>

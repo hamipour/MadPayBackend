@@ -6,9 +6,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MadPay724.Data.Infrastructure
+namespace MadPay724.Repository.Infrastructure
 {
-    public class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
+    public abstract class Repository<TEntity> : IRepository<TEntity>, IDisposable where TEntity : class
     {
         protected readonly DbContext _db;
         protected readonly DbSet<TEntity> _dbSet;

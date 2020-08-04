@@ -1,0 +1,8 @@
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\obj\Debug\netcoreapp3.0\MadPay724.ViewModels.csprojAssemblyReference.cache
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\obj\Debug\netcoreapp3.0\MadPay724.ViewModels.AssemblyInfoInputs.cache
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\obj\Debug\netcoreapp3.0\MadPay724.ViewModels.AssemblyInfo.cs
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\bin\Debug\netcoreapp3.0\MadPay724.ViewModels.deps.json
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\bin\Debug\netcoreapp3.0\MadPay724.ViewModels.dll
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\bin\Debug\netcoreapp3.0\MadPay724.ViewModels.pdb
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\obj\Debug\netcoreapp3.0\MadPay724.ViewModels.dll
+E:\asp.net\madpay724backend\MadPay724\MadPay724.ViewModels\obj\Debug\netcoreapp3.0\MadPay724.ViewModels.pdb

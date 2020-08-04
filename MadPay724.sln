@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Presentation", "MadPay724\MadPay724.Presentation.csproj", "{FE072A2A-AAD5-4B5C-94D6-29DAD20C5108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Presentation", "MadPay724\MadPay724.Presentation.csproj", "{FE072A2A-AAD5-4B5C-94D6-29DAD20C5108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Data", "MadPay724.Data\MadPay724.Data.csproj", "{64B7AFE1-4C63-4D2E-AB4A-B1EC042D913A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Data", "MadPay724.Data\MadPay724.Data.csproj", "{64B7AFE1-4C63-4D2E-AB4A-B1EC042D913A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Common", "MadPay724.Common\MadPay724.Common.csproj", "{976ACCC4-9E28-4868-8C82-C4365071657B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Common", "MadPay724.Common\MadPay724.Common.csproj", "{976ACCC4-9E28-4868-8C82-C4365071657B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Repository", "MadPay724.Repository\MadPay724.Repository.csproj", "{6A4D0E95-8417-4034-9D2D-C106B30DD7A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Repository", "MadPay724.Repository\MadPay724.Repository.csproj", "{6A4D0E95-8417-4034-9D2D-C106B30DD7A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.Services", "MadPay724.Services\MadPay724.Services.csproj", "{A812BF7C-74F0-4CB1-8265-3DACB141C618}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MadPay724.Services", "MadPay724.Services\MadPay724.Services.csproj", "{A812BF7C-74F0-4CB1-8265-3DACB141C618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadPay724.ViewModels", "MadPay724.ViewModels\MadPay724.ViewModels.csproj", "{AA216F5B-6AAA-4FF4-BF8B-2F702B44A487}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A812BF7C-74F0-4CB1-8265-3DACB141C618}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A812BF7C-74F0-4CB1-8265-3DACB141C618}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A812BF7C-74F0-4CB1-8265-3DACB141C618}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA216F5B-6AAA-4FF4-BF8B-2F702B44A487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA216F5B-6AAA-4FF4-BF8B-2F702B44A487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA216F5B-6AAA-4FF4-BF8B-2F702B44A487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA216F5B-6AAA-4FF4-BF8B-2F702B44A487}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
