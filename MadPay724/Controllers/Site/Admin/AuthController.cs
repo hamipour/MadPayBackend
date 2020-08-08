@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
+using MadPay724.Common.Helpers;
 using MadPay724.Common.Messages;
 using MadPay724.Data.DatabaseContext;
 using MadPay724.Repository.Infrastructure;
@@ -18,6 +20,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace MadPay724.Presentation.Controllers.Site.Admin
 {
+    [ApiExplorerSettings(GroupName = "Site ")]
     [Route("site/admin/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
@@ -25,11 +28,16 @@ namespace MadPay724.Presentation.Controllers.Site.Admin
         private readonly IUnitOfWork<MadPayDbContext> _db;
         private readonly IAuthService _auth;
         private readonly IConfiguration _config;
-        public AuthController(IAuthService auth, IUnitOfWork<MadPayDbContext> db, IConfiguration config)
+        private readonly IMapper _mapper;
+        public AuthController(IAuthService auth,
+            IUnitOfWork<MadPayDbContext> db,
+            IConfiguration config,
+            IMapper mapper)
         {
             _db = db;
             _auth = auth;
             _config = config;
+            _mapper = mapper;
         }
 
         [HttpPost("login")]
@@ -37,7 +45,7 @@ namespace MadPay724.Presentation.Controllers.Site.Admin
         {
             Data.Models.User user = await _auth.Login(loginModel.Username, loginModel.Password);
 
-            if(user == null)
+            if (user == null)
             {
                 return Unauthorized(new ReturnMessage()
                 {
@@ -74,6 +82,12 @@ namespace MadPay724.Presentation.Controllers.Site.Admin
         [HttpPost("signup")]
         public async Task<IActionResult> Signup(SignupViewModel signupModel)
         {
+            if (!ModelState.IsValid)
+                return null;
+
+            var user = _mapper.Map<MadPay724.Data.Models.User>(signupModel);
+            await _auth.Signup(user, signupModel.Password);
+
 
             return Ok();
         }
